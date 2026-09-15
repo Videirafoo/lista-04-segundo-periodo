@@ -1,65 +1,70 @@
 # Lista 04 — Recursividade em Python
 
-Repositório acadêmico com exercícios de **Recursividade em Python**, desenvolvido durante o curso de Engenharia de Software.
+Repositório acadêmico com **6 exercícios de Recursividade em Python**.
 
-## Conteúdo
+**Nível:** intermediário  
+**Objetivo:** entender caso base, redução do problema e retorno das chamadas recursivas.
 
-O projeto reúne **6 exercícios** organizados em arquivos independentes e executados em sequência pelo `main.py`.
+## Exercícios
 
-A proposta é praticar o raciocínio recursivo: uma função resolve um problema chamando a si mesma com uma versão menor do mesmo problema, sempre com uma condição de parada bem definida.
+1. MDC recursivo;
+2. potência recursiva;
+3. inversão de string;
+4. verificação de palíndromo;
+5. soma dos dígitos;
+6. geração de anagramas.
 
 ## Conceitos praticados
 
 - funções recursivas;
 - caso base;
-- chamadas sucessivas;
-- redução do problema;
-- acompanhamento da execução;
-- organização de exercícios em módulos;
-- comparação entre solução direta e solução recursiva.
-
-## Estrutura
-
-```text
-exercicio1.py
-exercicio2.py
-exercicio3.py
-exercicio4.py
-exercicio5.py
-exercicio6.py
-main.py
-```
+- redução progressiva do problema;
+- retorno das chamadas;
+- manipulação de números e strings;
+- organização em funções independentes.
 
 ## Como executar
 
-Para executar todos os exercícios em sequência:
+Todos os exercícios em sequência:
 
 ```bash
 python main.py
 ```
 
-Também é possível executar cada exercício individualmente:
+Ou um exercício:
 
 ```bash
 python exercicio1.py
 ```
 
-## Para quem está aprendendo
+## Como estudar recursividade
 
-Ao estudar recursividade, tente identificar em cada exercício:
+Em cada solução, identifique quatro coisas:
 
-1. qual é o caso base;
-2. como o problema fica menor a cada chamada;
-3. quando as chamadas começam a retornar;
-4. o que aconteceria se não existisse uma condição de parada.
+1. **caso base** — quando a função para de chamar a si mesma;
+2. **passo recursivo** — como o problema é reduzido;
+3. **estado** — qual informação muda a cada chamada;
+4. **retorno** — como o resultado é reconstruído na volta das chamadas.
+
+## Desafio extra
+
+Escolha um dos exercícios e escreva também uma solução iterativa. Depois compare legibilidade, quantidade de passos e uso de memória.
+
+## Próximo passo
+
+Use [lista-05-revisao-segundo-periodo](https://github.com/Videirafoo/lista-05-revisao-segundo-periodo) para revisar os fundamentos e consolidar o conteúdo antes de avançar para mini sistemas.
+
+## Qualidade
+
+O GitHub Actions valida a sintaxe Python e verifica se o `main.py` importa corretamente todos os exercícios.
 
 ## Tecnologias
 
-- Python 3
-- Visual Studio Code
-- Git e GitHub
+`Python 3` · `Recursividade` · `Algoritmos` · `GitHub Actions`
 
 ## Autor
 
 **Fernando Otávio Videira Junior**  
 Engenharia de Software — Universidade de Vassouras, Campus Saquarema
+
+> Recursividade fica mais simples quando você consegue explicar claramente o caso base e como cada chamada aproxima o problema dele.
