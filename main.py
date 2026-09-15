@@ -15,15 +15,21 @@ exercicios = [
     exercicio6,
 ]
 
-print("Lista de Exercícios de Recursividade")
-print("Os exercícios serão executados em sequência.")
 
-for numero, exercicio in enumerate(exercicios, start=1):
-    exercicio()
+def main():
+    print("Lista de Exercícios de Recursividade")
+    print("Os exercícios serão executados em sequência.")
 
-    if numero < len(exercicios):
-        input(
-            f"Pressione Enter para continuar para o próximo exercício "
-            f"({numero + 1})..."
-        )
-        print("\n" + "-" * 50 + "\n")
+    for numero, exercicio in enumerate(exercicios, start=1):
+        exercicio()
+
+        if numero < len(exercicios):
+            input(
+                f"Pressione Enter para continuar para o próximo exercício "
+                f"({numero + 1})..."
+            )
+            print("\n" + "-" * 50 + "\n")
+
+
+if __name__ == "__main__":
+    main()
